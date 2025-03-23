@@ -12,7 +12,10 @@
 			"extensions": [
 				"ms-vscode.cpptools-extension-pack",
 				"vscode-icons-team.vscode-icons"
-			]
+			],
+			"settings": {
+				"workbench.iconTheme": "vscode-icons"
+			}
 		}
 	}
 }
