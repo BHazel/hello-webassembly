@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fizz Buzz (Emscripten Plumbing)</title>
+    </head>
+    <body>
+        <h1>Fizz Buzz (Emscripten Plumbing)</h1>
+        <p>
+            <strong>Count:</strong>
+            <input id="count" type="number" value="30" min="1" />
+        </p>
+        <p>
+            <strong>Memory:</strong>
+            <input id="memory-none" type="radio" value="none" name="memory-mode" checked="checked" />
+            <label for="memory-none">None</label>
+            <input id="memory-self" type="radio" value="self" name="memory-mode" />
+            <label for="memory-self">Self-Managed</label>
+            <input id="memory-code" type="radio" value="code" name="memory-mode" />
+            <label for="memory-code">Code-Managed</label>
+        </p>
+        <p>
+            <input id="verbose" type="checkbox" checked="checked" />
+            <label for="verbose">Log Detailed Output to Console</label>
+        </p>
+        <p>
+            <button onclick="playFizzBuzz()">Run</button>
+        </p>
+        <h2>Results</h2>
+        <p id="results"></p>
+        <script type="text/javascript" src="fizz-buzz.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

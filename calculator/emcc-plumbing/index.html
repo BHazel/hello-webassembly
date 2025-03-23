@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator (Emscripten Plumbing)</title>
+    </head>
+    <body>
+        <h1>Calculator (Emscripten Plumbing)</h1>
+        <p>Enter two numbers, select an operation and click Calculate.</p>
+
+        <input id="number1" type="number" />
+        <select id="operation">
+            <option value="add" selected="selected">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+        </select>
+        <input id="number2" type="number" />
+        <button onclick="calculate()">Calculate</button>
+
+        <h2>Results</h2>
+        <p id="result"></p>
+
+        <script type="text/javascript" src="arith.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

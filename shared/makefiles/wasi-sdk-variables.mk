@@ -1,0 +1,10 @@
+# Variables for configuring the WASI SDK.
+
+WASI_SDK_VERSION=25
+WASI_SDK_ARCH=x86_64
+WASI_SDK_OS=linux
+
+WASI_SDK=wasi-sdk-$(WASI_SDK_VERSION).0-$(WASI_SDK_ARCH)-$(WASI_SDK_OS)
+WASI_SDK_ROOT=$(HOME)/$(WASI_SDK)
+WASI_SDK_BIN_PATH=$(WASI_SDK_ROOT)/bin
+CLANG_OPTIONS=--sysroot $(WASI_SDK_ROOT)/share/wasi-sysroot
