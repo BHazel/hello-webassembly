@@ -1,0 +1,10 @@
+{
+	"name": "Emscripten with WASI SDK and Wasmtime",
+	"build": {
+		"context": "..",
+		"dockerfile": "../Dockerfile"
+	},
+	"forwardPorts": [
+        8080
+    ]
+}
