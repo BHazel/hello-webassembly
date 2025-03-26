@@ -25,8 +25,9 @@ Each sample is self-contained in its own directory.  Each of these contian sub-d
 |Case|Compiler|Description|
 |-|-|-|
 |First Principles|Emscripten|Generated plumbing JavaScript file is not used; the WebAssembly JavaScript API is used directly.|
-|EMCC Plumbing|Emscripten|generated plumbing JavaScript file is used.|
+|EMCC Plumbing|Emscripten|Generated plumbing JavaScript file is used.|
 |EMCC HTML|Emscripten|Generates a sample HTML page.|
+|EMCC Embind|Emscripten|Generated plumbing JavaScript file is used for the Embind library for C++ code.|
 |WASI|WASI SDK|Can be run using a WebAssembly runtime such as Wasmtime.|
 
 Each sub-directory contains a `Makefile` to build, serve and run the sample.  Common targets include:
