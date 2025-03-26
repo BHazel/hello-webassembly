@@ -20,7 +20,7 @@ This repository contains some examples of working with WebAssembly, written as I
 
 The easiest way to get started is to create a Docker image using the included `Dockerfile` or create a GitHub Codespace.  However, the dependencies are easy to get and install.  If you are running the code locally ensure the WASI SDK variables are configured correctly in the `shared/makefiles/wasi-sdk-variables.mk` file.
 
-Each sample is self-contained in its own directory.  Each of these contian sub-directories for the WebAssembly development case:
+Each sample is self-contained in its own directory, grouped by programming language.  Each of these contian sub-directories for the WebAssembly development case:
 
 |Case|Compiler|Description|
 |-|-|-|

@@ -6,4 +6,4 @@ all:
 clean:
 	rm -f arith.js arith.wasm
 
-include ../../shared/makefiles/python-http-server.mk
+include ../../../shared/makefiles/python-http-server.mk

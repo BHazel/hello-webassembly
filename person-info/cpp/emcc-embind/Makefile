@@ -6,4 +6,4 @@ all:
 clean:
 	rm -f person.js person.wasm
 
-include ../../shared/makefiles/python-http-server.mk
+include ../../../shared/makefiles/python-http-server.mk

@@ -1,4 +1,4 @@
-include ../../shared/makefiles/wasi-sdk-variables.mk
+include ../../../shared/makefiles/wasi-sdk-variables.mk
 
 all:
 	$(WASI_SDK_BIN_PATH)/clang $(CLANG_OPTIONS) \

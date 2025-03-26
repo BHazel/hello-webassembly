@@ -4,4 +4,4 @@ all:
 clean:
 	rm -f hello.html hello.js hello.wasm
 
-include ../../shared/makefiles/python-http-server.mk
+include ../../../shared/makefiles/python-http-server.mk

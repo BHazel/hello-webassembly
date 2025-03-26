@@ -6,4 +6,4 @@ all:
 clean:
 	rm -f fizz-buzz.js fizz-buzz.wasm
 
-include ../../shared/makefiles/python-http-server.mk
+include ../../../shared/makefiles/python-http-server.mk
