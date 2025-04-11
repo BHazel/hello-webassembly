@@ -1,0 +1,21 @@
+{
+  "name": "calculator-as-plumbing",
+  "version": "1.0.0",
+  "description": "Basic arithmetic operations in AssemblyScript.",
+  "scripts": {
+    "build": "asc arith.ts --target build"
+  },
+  "keywords": [],
+  "author": "Benedict W. Hazel",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "assemblyscript": "^0.27.35"
+  },
+  "exports": {
+    ".": {
+      "import": "./arith.js",
+      "types": "./arith.d.ts"
+    }
+  }
+}

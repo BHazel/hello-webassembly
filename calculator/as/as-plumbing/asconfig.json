@@ -1,0 +1,10 @@
+{
+  "targets": {
+    "build": {
+      "outFile": "hello.wasm"
+    }
+  },
+  "options": {
+    "bindings": "esm"
+  }
+}

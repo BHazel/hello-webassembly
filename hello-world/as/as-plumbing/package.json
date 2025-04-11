@@ -1,0 +1,22 @@
+{
+  "name": "hello-world-as-plumbing",
+  "version": "1.0.0",
+  "description": "Hello World in AssemblyScript.",
+  "scripts": {
+    "build": "asc hello.ts --target build"
+  },
+  "keywords": [],
+  "author": "Benedict W. Hazel",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@assemblyscript/wasi-shim": "^0.1.0",
+    "assemblyscript": "^0.27.35"
+  },
+  "exports": {
+    ".": {
+      "import": "./hello.js",
+      "types": "./hello.d.ts"
+    }
+  }
+}

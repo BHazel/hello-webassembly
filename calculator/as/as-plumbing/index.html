@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator (AssemblyScript Plumbing)</title>
+    </head>
+    <body>
+        <h1>Calculator (AssemblyScript Plumbing)</h1>
+        <p>Enter two numbers, select an operation and click Calculate.</p>
+
+        <input id="number1" type="number" />
+        <select id="operation">
+            <option value="add" selected="selected">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+        </select>
+        <input id="number2" type="number" />
+        <button onclick="calculate()">Calculate</button>
+
+        <h2>Results</h2>
+        <p id="result"></p>
+
+        <script type="module" src="arith.js"></script>
+        <script type="module" src="index.js"></script>
+        <script type="module">
+            import { calculate } from './index.js';
+            
+            window.calculate = calculate;
+        </script>
+    </body>
+</html>
