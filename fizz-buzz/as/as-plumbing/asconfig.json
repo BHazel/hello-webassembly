@@ -1,0 +1,10 @@
+{
+  "targets": {
+    "build": {
+      "outFile": "fizz-buzz.wasm"
+    }
+  },
+  "options": {
+    "bindings": "esm"
+  }
+}

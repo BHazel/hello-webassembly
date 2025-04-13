@@ -1,0 +1,21 @@
+{
+  "name": "fizz-buzz-as-plumbing",
+  "version": "1.0.0",
+  "description": "Fizz Buzz in AssemblyScript.",
+  "scripts": {
+    "build": "asc fizz-buzz.ts --target build"
+  },
+  "keywords": [],
+  "author": "Benedict W. Hazel",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "assemblyscript": "^0.27.35"
+  },
+  "exports": {
+    ".": {
+      "import": "./fizz-buzz.js",
+      "types": "./fizz-buzz.d.ts"
+    }
+  }
+}
