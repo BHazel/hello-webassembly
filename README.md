@@ -5,12 +5,14 @@ This repository contains some examples of working with WebAssembly, written as I
 ## Technologies
 
 * C, C++
+* AssemblyScript
 * WebAssembly
 * HTML/CSS/JavaScript (vanilla)
 
 ## Requirements
 
 * Emscripten
+* Node.js
 * WASI SDK
 * GNU Make
 * Wasmtime (or any other WebAssembly runtime)
@@ -24,6 +26,7 @@ Each sample is self-contained in its own directory, grouped by programming langu
 
 |Case|Compiler|Description|
 |-|-|-|
+|AS Plumbing|AssemblyScript|Generated plumbing JavaScript file is used.|
 |First Principles|Emscripten|Generated plumbing JavaScript file is not used; the WebAssembly JavaScript API is used directly.|
 |EMCC Plumbing|Emscripten|Generated plumbing JavaScript file is used.|
 |EMCC HTML|Emscripten|Generates a sample HTML page.|
