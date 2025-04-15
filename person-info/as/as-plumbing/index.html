@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Person Info (AssemblyScript Plumbing)</title>
+    </head>
+    <body>
+        <h1>Person Info (AssemblyScript Plumbing)</h1>
+        <p>
+            You are
+            <input id="name" type="text" placeholder="Your Name" />
+            , a
+            <select id="gender">
+                <option value="1">man</option>
+                <option value="0">woman</option>
+            </select>
+            who was born in
+            <input id="birthYear" type="number" placeholder="Your Year of Birth" />
+        </p>
+        <p>
+            <button onclick="getPersonInfo()">Who are you?</button>
+        </p>
+        <p id="personInfo"></p>
+
+        <script type="module" src="person.js"></script>
+        <script type="module" src="index.js"></script>
+        <script type="module">
+            import { getPersonInfo } from './index.js';
+
+            window.getPersonInfo = getPersonInfo;
+        </script>
+    </body>
+</html>

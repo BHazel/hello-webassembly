@@ -1,0 +1,26 @@
+{
+  "name": "person-info-as-plumbing",
+  "version": "1.0.0",
+  "description": "Person information in AssemblyScript.",
+  "scripts": {
+    "build": "asc person.ts --target build",
+    "asbuild:debug": "asc assembly/index.ts --target debug",
+    "asbuild:release": "asc assembly/index.ts --target release",
+    "asbuild": "npm run asbuild:debug && npm run asbuild:release",
+    "test": "node tests",
+    "start": "npx serve ."
+  },
+  "keywords": [],
+  "author": "Benedict W. Hazel",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "assemblyscript": "^0.27.35"
+  },
+  "exports": {
+    ".": {
+      "import": "./person.js",
+      "types": "./person.d.ts"
+    }
+  }
+}

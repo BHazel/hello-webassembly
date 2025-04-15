@@ -1,0 +1,10 @@
+{
+  "targets": {
+    "build": {
+      "outFile": "person.wasm"
+    }
+  },
+  "options": {
+    "bindings": "esm"
+  }
+}
