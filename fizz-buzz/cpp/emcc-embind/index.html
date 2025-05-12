@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fizz Buzz (C++ Emscripten Embind)</title>
+    </head>
+    <body>
+        <h1>Fizz Buzz (C++ Emscripten Embind)</h1>
+        <p>
+            <strong>Count:</strong>
+            <input id="count" type="number" value="30" min="1" />
+        </p>
+        <p>
+            <strong>WebAssembly Function:</strong>
+            <input id="func-per-number" type="radio" value="number" name="wasm-func" checked="checked" />
+            <label for="func-per-number">Per Number</label>
+            <input id="func-full-count" type="radio" value="count" name="wasm-func" />
+            <label for="func-full-count">Full Count</label>
+        </p>
+        <p>
+            <input id="verbose" type="checkbox" checked="checked" />
+            <label for="verbose">Log Detailed Output to Console</label>
+        </p>
+        <p>
+            <button onclick="playFizzBuzz()">Run</button>
+        </p>
+        <h2>Results</h2>
+        <p id="results"></p>
+        <script type="text/javascript" src="fizz-buzz.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
