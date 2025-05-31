@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculator (C Emscripten Plumbing)</title>
+        <title>Calculator (.NET Plumbing)</title>
     </head>
     <body>
-        <h1>Calculator (C Emscripten Plumbing)</h1>
+        <h1>Calculator (.NET Plumbing)</h1>
         <p>Enter two numbers, select an operation and click Calculate.</p>
 
         <input id="number1" type="number" />
@@ -21,8 +21,12 @@
 
         <h2>Results</h2>
         <p id="result"></p>
-
-        <script type="text/javascript" src="arith.js"></script>
-        <script type="text/javascript" src="index.js"></script>
+        
+        <script type="module" src="index.js"></script>
+        <script type="module">
+            import { calculate } from './index.js';
+            
+            window.calculate = calculate;
+        </script>
     </body>
 </html>

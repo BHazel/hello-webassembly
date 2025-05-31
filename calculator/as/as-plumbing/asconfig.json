@@ -1,7 +1,7 @@
 {
   "targets": {
     "build": {
-      "outFile": "hello.wasm"
+      "outFile": "arith.wasm"
     }
   },
   "options": {

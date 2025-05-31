@@ -1,15 +1,15 @@
-export function add(a: f64, b: f64): f64 {
-  return a + b;
+export function add(num1: f64, num2: f64): f64 {
+  return num1 + num2;
 }
 
-export function subtract(a: f64, b: f64): f64 {
-  return a - b;
+export function subtract(num1: f64, num2: f64): f64 {
+  return num1 - num2;
 }
 
-export function multiply(a: f64, b: f64): f64 {
-  return a * b;
+export function multiply(num1: f64, num2: f64): f64 {
+  return num1 * num2;
 }
 
-export function divide(a: f64, b: f64): f64 {
-  return a / b;
+export function divide(num1: f64, num2: f64): f64 {
+  return num1 / num2;
 }
