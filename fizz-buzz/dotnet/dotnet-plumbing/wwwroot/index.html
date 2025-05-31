@@ -3,13 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Fizz Buzz (AssemblyScript Plumbing)</title>
+        <title>Fizz Buzz (.NET Plumbing)</title>
     </head>
     <body>
-        <h1>Fizz Buzz (AssemblyScript Plumbing)</h1>
+        <h1>Fizz Buzz (.NET Plumbing)</h1>
         <p>
             <strong>Count:</strong>
             <input id="count" type="number" value="30" min="1" />
+        </p>
+        <p>
+            <strong>WebAssembly Function:</strong>
+            <input id="func-per-number" type="radio" value="number" name="wasm-func" checked="checked" />
+            <label for="func-per-number">Per Number</label>
+            <input id="func-full-count" type="radio" value="count" name="wasm-func" />
+            <label for="func-full-count">Full Count</label>
         </p>
         <p>
             <input id="verbose" type="checkbox" checked="checked" />
@@ -20,7 +27,6 @@
         </p>
         <h2>Results</h2>
         <p id="results"></p>
-        <script type="module" src="fizz-buzz.js"></script>
         <script type="module" src="index.js"></script>
         <script type="module">
             import { playFizzBuzz } from './index.js';
